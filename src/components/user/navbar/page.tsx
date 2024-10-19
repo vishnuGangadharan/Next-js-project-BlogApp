@@ -15,34 +15,33 @@ const Navbar = () => {
 
   return (
     <div className="w-full">
-  <div
-  style={{ backgroundColor: "#141414" }}
-  className="text-customGray text-[10px] text-center py-2 flex justify-center items-center "
->
-  Subscribe to our Newsletter For 
-  <span className="hidden md:inline"> New & Latest</span> 
-  Blogs and Resources
-  <span className="text-customYellow ml-2">
-    <GoArrowUpRight size={16} />
-  </span>
-</div>
-
+      <div
+        style={{ backgroundColor: "#141414" }}
+        className="text-customGray text-[15px] text-center py-4 flex justify-center items-center "
+      >
+        Subscribe to our Newsletter For
+        <span className="hidden md:inline"> New & Latest</span>
+        Blogs and Resources
+        <span className="text-customYellow ml-2">
+          <GoArrowUpRight size={16} />
+        </span>
+      </div>
 
       <div
         style={{ backgroundColor: "#1A1A1A" }}
-        className=" text-white py-2 px-4 flex justify-between  md:justify-around items-center"
+        className=" text-white py-4 px-4 flex justify-between  md:justify-around items-center"
       >
         <div className="flex justify-center  sm:justify-start ">
           <Image
             src="/Logo.png"
             alt="Logo"
-            width={100}
-            height={100}
+            width={150}
+            height={150}
             className=""
           />
         </div>
 
-        <div className="hidden md:flex space-x-8 text-[12px]">
+        <div className="hidden md:flex space-x-8 text-[18px]">
           <a href="#" className="text-customGray hover:text-customYellow">
             Home
           </a>

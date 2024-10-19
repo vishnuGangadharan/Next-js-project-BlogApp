@@ -1,19 +1,24 @@
+import {nextui} from '@nextui-org/theme';
 import type { Config } from "tailwindcss";
+import tailwindcssAnimate from 'tailwindcss-animate';
 
 const config: Config = {
     darkMode: ["class"],
-    content: [
+  content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/[object Object].js"
   ],
   theme: {
   	extend: {
   		colors: {
+			customGrayHome:'#666666',
   			customYellow: '#FFD11A',
   			customGray: '#404040',
   			inputBg: '#262626',
   			inputText: '#666666',
+			textRandom: '#98989A',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -67,6 +72,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate,nextui()],
 };
 export default config;
