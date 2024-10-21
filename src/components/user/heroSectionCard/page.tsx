@@ -5,12 +5,12 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const HeroSectionCard = () => {
   return (
-    <div className='bg-black h-full flex flex-col pb-10'>
+    <div className='bg-black h-full flex flex-col md:px-24 pb-32 '>
       {/* Cards Row */}
-      <div className='flex flex-col lg:flex-row justify-around items-center lg:space-x-6 '>
+      <div className='flex flex-col lg:flex-row justify-between items-center lg:space-x-6 '>
         {/* Card 1 */}
         <Card className="bg-black w-[350px] border-none lg:border-r lg:border-gray-500 lg:border-opacity-30">
-          <div className='md:ml-10'>
+          <div className=''>
             <div className='mt-5 mb-5'>
               <Image src="/Icon.png" width={25} height={25} alt="" />
             </div>
@@ -65,17 +65,23 @@ const HeroSectionCard = () => {
           </div>
         </Card>
       </div>
-      <div className='mt-10 px-4 lg:px-16 md:text:5xl first-letter:mb-10'>
-        <h1 className='text-white font-kumbh text-2xl lg:text-7xl pl-10'>Today's Headlines: Stay</h1> 
-        <div className=' md:flex'>
-       <h1 className='text-white font-kumbh text-2xl lg:text-7xl pl-10'>Informed</h1> 
-        <p className='font-inter text-textRandom mt-4 pl-10 pr-10'>
-          Explore the latest news from around the world. We bring you up-to-the-minute
-          updates on the most significant events, trends, and stories. Discover the
-          world through our news coverage.
-        </p>
-        </div>
-      </div>
+      <div className='mt-10 px-4'>
+  <h1 className='text-white font-kumbh text-2xl sm:text-3xl md:text-5xl lg:text-7xl'>
+    Today's Headlines: Stay
+  </h1>
+  <div className='flex flex-col md:flex-row md:items-center md:space-x-2'>
+    <h1 className='text-white font-kumbh  md:mt-0 text-2xl sm:text-3xl md:text-5xl lg:text-7xl'>
+      Informed
+    </h1>
+    <p className='font-inter text-textRandom mt-4 md:mt-0 px-2 sm:px-0 md:px-4'>
+      Explore the latest news from around the world. We bring you up-to-the-minute
+      updates on the most significant events, trends, and stories. Discover the
+      world through our news coverage.
+    </p>
+  </div>
+</div>
+
+
     </div>
   )
 }

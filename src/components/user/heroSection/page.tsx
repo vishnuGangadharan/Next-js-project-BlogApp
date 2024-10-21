@@ -7,7 +7,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const HeroSection = () => {
   return (
-    <div className="h-auto bg-black px-4 md:px-20">
+    <div className="h-auto bg-black px-4 md:px-24">
       <div className=" md:flex">
         <div className="md:w-[60%]">
           <div className="">
@@ -56,7 +56,7 @@ const HeroSection = () => {
           <Image
             src="/Layer 1.png"
             alt="AI Image"
-            layout="responsive"
+            // layout="responsive"
             width={300}
             height={200}
             className="object-cover"

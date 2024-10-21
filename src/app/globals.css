@@ -88,3 +88,14 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+.custom-button {
+  background-color: var(--your-custom-yellow-color); /* Replace with your actual color */
+  transition: background-color 0.3s ease; /* Optional: smooth transition */
+}
+
+.custom-button:hover {
+  background-color: var(--your-custom-yellow-color); /* Ensure it stays the same on hover */
+}

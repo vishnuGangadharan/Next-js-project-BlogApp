@@ -1,9 +1,12 @@
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 // import Head from 'next/head';
 import { NextUIProvider } from '@nextui-org/react';
-
+import { ReactQueryClientProvider } from "@/services/provider";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,6 +29,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <head>
@@ -37,9 +42,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+     <ReactQueryClientProvider>
         <NextUIProvider>
           {children}
         </NextUIProvider>
+        <ToastContainer />
+        </ReactQueryClientProvider>
       </body>
     </html>
   );

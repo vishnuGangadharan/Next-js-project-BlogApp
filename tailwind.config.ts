@@ -13,6 +13,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			inputBackground:'#1A1A1A',
 			customGrayHome:'#666666',
   			customYellow: '#FFD11A',
   			customGray: '#404040',
